@@ -5,6 +5,14 @@ Github Link : https://github.com/alokgaurav04/DA6401_Assignment_3
 
 This notebook is structured in such a way that all the cells can be run one after another. Run All Cells command can also be used, but be careful of WandB sweeps.
 
+Run these two lines to install hindi font for ploting heatmap:-
+
+## Installing font for Hindi for matplotlib ##
+
+!apt-get install -y fonts-lohit-deva
+
+!fc-list :lang=hi family
+
 To run the model without WandB, use the following code:
 
 model = test_on_dataset(language="hi",
