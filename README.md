@@ -5,7 +5,7 @@ Github Link : https://github.com/alokgaurav04/DA6401_Assignment_3
 
 This notebook is structured in such a way that all the cells can be run one after another. Run All Cells command can also be used, but be careful of WandB sweeps.
 
-Run these two lines to install hindi font for ploting heatmap:-
+Run these two lines to install hindi font for plotting heatmap:-
 
      !apt-get install -y fonts-lohit-deva
 
