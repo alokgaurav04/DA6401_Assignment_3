@@ -7,11 +7,9 @@ This notebook is structured in such a way that all the cells can be run one afte
 
 Run these two lines to install hindi font for ploting heatmap:-
 
-Installing font for Hindi for matplotlib ##
+     !apt-get install -y fonts-lohit-deva
 
-!apt-get install -y fonts-lohit-deva
-
-!fc-list :lang=hi family
+     !fc-list :lang=hi family
 
 To run the model without WandB, use the following code:
 
