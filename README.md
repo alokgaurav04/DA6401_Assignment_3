@@ -56,6 +56,7 @@ test_words = get_test_words(5)
 
 # Visualise connectivity for "test_words"
 for word in test_words:
+
     visualise_connectivity(model, word, activation="scaler")
 
 # For plotting heatmap 
