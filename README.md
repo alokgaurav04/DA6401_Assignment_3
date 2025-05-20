@@ -21,28 +21,51 @@ To run the model with WandB sweep, use the following code:
 # Creating the WandB config
 
 sweep_config = {
+
   "method": "grid",
+  
   "metric":{
+  
       'name':'val acc',
+      
       'goal':'maximize'
+      
   },
+  
   "parameters": {
+  
         "enc_dec_layers": {
+        
            "values": [1, 2, 3]                 # Number of Encoder and Decoder layer
+           
         },
+        
         "units": {
+        
             "values": [64, 128, 256]           # Dimensionality
+            
         },
+        
         "layer_type": {
+        
             "values": ["rnn", "gru", "lstm"]   # Cell Type
+            
         },
+        
         "embedding_dim": {
+        
             "values": [64, 128, 256]           #Embedding size
+            
         },
+        
         "dropout": {
+        
             "values": [0.2, 0.3]               #Dropout
+            
         }
+        
     }
+    
 }
 
 # Creating a sweep
